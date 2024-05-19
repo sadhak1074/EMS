@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 100%;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration Form</h1>
+        <form method="POST" action="/">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for="qualification">Qualification:</label><br>
+            <input type="text" id="qualification" name="qualification" required><br>
+            <label for="current_address">Current Address:</label><br>
+            <input type="text" id="current_address" name="current_address" required><br>
+            <label for="department">Select Department:</label><br>
+            <select id="department" name="department" required>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+                <option value="IT">IT</option>
+                <option value="Operations">Operations</option>
+            </select><br>
+            <label for="position">Position:</label><br>
+            <input type="text" id="position" name="position" required><br>
+            <label for="joining_date">Joining Date:</label><br>
+            <input type="date" id="joining_date" name="joining_date" required><br>
+            <br>
+            <label for="profile_picture">Profile Picture:</label><br>
+            <input type="file" id="profile_picture" name="profile_picture" required><br>
+            <br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <label for="total_experience">Total Experience (in years):</label><br>
+            <input type="number" id="total_experience" name="total_experience" required><br>
+            <label for="last_company_name">Last Company Name:</label><br>
+            <input type="text" id="last_company_name" name="last_company_name" required><br>
+            <label for="last_salary">Last Salary:</label><br>
+            <input type="number" id="last_salary" name="last_salary" required><br>
+            <label for="total_projects">Total Projects:</label><br>
+            <input type="number" id="total_projects" name="total_projects" required><br>
+            <label for="projects_complete">Projects Completed:</label><br>
+            <input type="number" id="projects_complete" name="projects_complete" required><br>
+            <label for="projects_pending">Projects Pending:</label><br>
+            <input type="number" id="projects_pending" name="projects_pending" required><br>
+            <label for="total_leaves">Total Leaves:</label><br>
+            <input type="number" id="total_leaves" name="total_leaves" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-container input[type="text"],
+        .form-container input[type="date"],
+        .form-container input[type="file"],
+        .form-container input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 0 auto 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+            outline: none;
+            display: block;
+        }
+        
+        .form-container input[type="submit"] {
+            margin-bottom: 0;
+        }
+        
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add New Project</h2>
+        <form action="/add_project" method="POST" enctype="multipart/form-data">
+            <label for="project_name">Project Name:</label>
+            <input type="text" id="project_name" name="project_name">
+
+            <label for="technology">Technology:</label>
+            <input type="text" id="technology" name="technology">
+
+            <label for="project_start_date">Start Date:</label>
+            <input type="date" id="project_start_date" name="project_start_date">
+
+            <label for="project_end_date">End Date:</label>
+            <input type="date" id="project_end_date" name="project_end_date">
+
+            <label for="project_document">Project Document:</label>
+            <input type="file" id="project_document" name="project_document">
+
+            <label for="other_document">Other Document:</label>
+            <input type="file" id="other_document" name="other_document">
+
+            <label for="project_links">Project Links:</label>
+            <input type="text" id="project_links" name="project_links">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

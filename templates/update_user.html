@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Update</title>
+</head>
+<body>
+    <h1>User Data Update</h1>
+    <form method="POST" action="">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" value="{{ user[1] }}"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="text" id="dob" name="dob" value="{{ user[2] }}"><br><br>
+
+        <label for="qualification">Qualification:</label><br>
+        <input type="text" id="qualification" name="qualification" value="{{ user[3] }}"><br><br>
+
+        <label for="current_address">Current Address:</label><br>
+        <input type="text" id="current_address" name="current_address" value="{{ user[4] }}"><br><br>
+
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" value="{{ user[5] }}"><br><br>
+
+        <label for="position">Position:</label><br>
+        <input type="text" id="position" name="position" value="{{ user[6] }}"><br><br>
+
+        <label for="joining_date">Joining Date:</label><br>
+        <input type="text" id="joining_date" name="joining_date" value="{{ user[7] }}"><br><br>
+
+        <label for="profile_picture">Profile Picture:</label><br>
+        <input type="text" id="profile_picture" name="profile_picture" value="{{ user[8] }}"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value="{{ user[9] }}"><br><br>
+
+        <label for="total_experience">Total Experience:</label><br>
+        <input type="text" id="total_experience" name="total_experience" value="{{ user[11] }}"><br><br>
+
+        <label for="last_company_name">Last Company Name:</label><br>
+        <input type="text" id="last_company_name" name="last_company_name" value="{{ user[12] }}"><br><br>
+
+        <label for="last_salary">Last Salary:</label><br>
+        <input type="text" id="last_salary" name="last_salary" value="{{ user[13] }}"><br><br>
+
+        <label for="total_projects">Total Projects:</label><br>
+        <input type="text" id="total_projects" name="total_projects" value="{{ user[14] }}"><br><br>
+
+        <label for="projects_complete">Projects Complete:</label><br>
+        <input type="text" id="projects_complete" name="projects_complete" value="{{ user[15] }}"><br><br>
+
+        <label for="projects_pending">Projects Pending:</label><br>
+        <input type="text" id="projects_pending" name="projects_pending" value="{{ user[16] }}"><br><br>
+
+        <label for="total_leaves">Total Leaves:</label><br>
+        <input type="text" id="total_leaves" name="total_leaves" value="{{ user[17] }}"><br><br>
+
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
